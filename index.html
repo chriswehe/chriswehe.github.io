@@ -3,82 +3,227 @@
   <head>
     <meta charset="utf-8">
     <title>Chris Wehe</title>
-    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-  
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-
-    <header>
-      <h1>Christopher Wehe</h1>
-      <h2>Backend Web Developer</h2>
+    <header class='header'>
+      <div class='header__text-box'>
+        <h1 class='heading-primary'>
+          <span class='heading-primary--main'>Backend Web Developer</span>
+          <span class='heading-primary--sub'>Christopher Wehe</span>
+        </h1>
+      </div>
     </header>
-    
-    <!-- <nav>
-      <ul class="navbar">
-        <a href="https://www.linkedin.com/in/christopher-wehe/" class="contact">
-          <li>LinkedIn</li>
-        </a>
-        <a href="https://github.com/chriswehe" class="contact">
-          <li>GitHub</li>
-        </a>
-        <a href="https://docs.google.com/document/d/1HE3ejE339iX-1W3Z8IBEWN8FYe0Andfum4wQckKErJI/edit?usp=sharing" class="contact">
-          <li>Resume</li>
-        </a>
-      </ul>
-    </nav> -->
 
     <main>
-      <section class="brand">
-        <p>As a software engineer and a former substitute teacher, I value cultivating an environment that promotes growth, learning, and inclusion. Finding creative solutions to new problems comes naturally to me.</p>
-      </section>
-      <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Databases include: MongoDB, Postgres</li>
-          <li>Full stack app including: Mongoose, Express, Node.js</li>
-          <li>Full stack app including: Django, Auth, REST Framework, Python</li>
-          <li>HTML, CSS, JS</li>
-          <li>Worked extensively with React: class based, functional, hooks, context</li>
-          <li>Git/Github</li>
-        </ul>
-      </section>
-      <section class="projects">
-        <h2>My Work</h2>
-        <div class="project">
-          <a href="https://github.com/chriswehe/PythonHackAssembler" class="Compiler">ASSEMBLY COMPILER</a>
-          <p>
-            Created a simulation of a 32-bit computer, using hardware description language, for a Nand to Tetris course project. At GA, built a compiler to translate assembly into machine code to run on the simulated computer from Nand to Tetris.
-          </p>
-        </div>
-        <div class="project">
-          <a href="https://github.com/chriswehe/project2" class="Compiler">POKE API</a>
-          <p>
-            Created an API for Pokemon Cards using MongoDB, Mongoose, Express, Node.js, and deployed using Heroku/MongoAtlas. Gave the API  full CRUD functionality.           </p>
-        </div>
-        <div class="project">
-            <a href="http://kanto.surge.sh" class="Compiler">POKEDEX</a>
-            <p>
-              Took my PokeAPI and created a front end for it with a partner. Created most of the structure using React, while my teammate developed most of the styling. Chose to use REACT, a component based front end,  to allow for more programmatic logic than using plain HTML and CSS. 
-            </p>
-        </div>
-        <div class="project">
-            <a href="https://pages.git.generalassemb.ly/chriswehe/project1/" class="Compiler">HANGMAN</a>
-            <p>
-              Project objective was to build and la simple game. Created a hangman game using HTML, CSS, and JS. Added a win and lose state animation. Used  JS dom manipulation to simulate a flip book animation by hiding and revealing text boxes that contained ASCII art. 
-            </p>
-        </div>
-      </section>
-    </main>
+      <section class="section-about">
 
-    <footer>
-      <nav>
-        <a href="https://www.linkedin.com/in/christopher-wehe/" class="contact">LinkedIn</a>
-        <a href="https://github.com/chriswehe" class="contact">GitHub</a>
-        <a href="https://docs.google.com/document/d/1HE3ejE339iX-1W3Z8IBEWN8FYe0Andfum4wQckKErJI/edit?usp=sharing" class="contact">Resume</a>
-      </nav>
-    </footer>
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                About Me
+            </h2>
+        </div>
+
+        <div class='row'>
+          <div class='col-1-of-2'>
+
+            <p class="paragraph">As a software engineer and a former substitute teacher, I value cultivating an environment that promotes growth, learning, and inclusion. Finding creative solutions to new problems comes naturally to me.</p>
+        
+            <a href="https://docs.google.com/document/d/1HE3ejE339iX-1W3Z8IBEWN8FYe0Andfum4wQckKErJI/edit?usp=sharing" target="_blank" class="btn-text">My Resume &rarr;</a>
+          </div>
+          <div class='col-1-of-2'>
+            <div class="composition">
+              <img src="img/about-3.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+              <img src="img/about-2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+              <img src="img/about-1.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+            </div>
+          </div>
+        </div>
+
+      </section>
+      
+      <section class="section-features">
+          <div class="u-center-text u-margin-bottom-big">
+              <h2 class="heading-secondary">
+                  Skills
+              </h2>
+          </div>
+        <div class='row'>
+          <div class='col-1-of-4'>
+            <div class="feature-box">
+              <h3 class="heading-tertiary u-margin-bottom-small ">Databases Include:</h3>
+              <p class="feature-box__text">
+                > MongoDB <br> 
+                > Postgres <br>
+              </p>
+            </div>
+          </div>
+
+          <div class='col-1-of-4'>
+            <div class="feature-box">
+              <h3 class="heading-tertiary u-margin-bottom-small ">Full-stack apps utilizing:</h3>
+              <p class="feature-box__text">
+                > Mongoose, Express, Node.js<br> 
+                > Django, Auth, REST Framework, Python<br>
+                <br>								
+              </p>
+            </div>
+          </div>
+
+          <div class='col-1-of-4'>
+            <div class="feature-box">
+              <h3 class="heading-tertiary u-margin-bottom-small ">Worked extensively with React:</h3>
+              <p class="feature-box__text">
+                > Class based<br> 
+                > Functional<br>
+                > Hooks<br> 
+                > Context<br>
+                <br>
+              </p>
+            </div>
+          </div>
+
+          <div class='col-1-of-4'>
+            <div class="feature-box">
+              <h3 class="heading-tertiary u-margin-bottom-small ">Additional</h3>
+              <p class="feature-box__text">
+                > HTML, CSS, JS<br> 
+                > Git/Github<br>
+                > Java<br> 
+                  <br>									
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tours">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+               My Projects
+            </h2>
+          </div>
+  
+          <div class='row'>
+            <div class='col-1-of-4'>
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <div class="card__picture card__picture--1">
+                    &nbsp;
+                  </div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--1">
+                        ASSEMBLY COMPILER
+                    </span>
+                  </h4>
+                  <div class="card__details">
+                    <p>
+                      Created a simulation of a 32-bit computer, using hardware description language, for a Nand to Tetris course project. At GA, built a compiler to translate assembly into machine code to run on the simulated computer from Nand to Tetris.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-1">
+                  <div class="card__cta">
+                    <a href="https://github.com/chriswehe/PythonHackAssembler" class="btn btn--white">View Repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class='col-1-of-4'>
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <div class="card__picture card__picture--2">
+                    &nbsp;
+                  </div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--2">
+                      POKE API
+                    </span>
+                  </h4>
+                  <div class="card__details">
+                    <p>
+                      Created an API for Pokemon Cards using MongoDB, Mongoose, Express, Node.js, and deployed using Heroku/MongoAtlas. Gave the API  full CRUD functionality.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-2">
+                  <div class="card__cta">
+                    <a href="https://github.com/chriswehe/project2" class="btn btn--white">View Repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class='col-1-of-4'>
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <div class="card__picture card__picture--3">
+                    &nbsp;
+                  </div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--3">
+                      POKEDEX
+                    </span>
+                    </h4>
+                    <div class="card__details">
+                      <p>
+                        Took my PokeAPI and created a front end for it with a partner. Created most of the structure using React, while my teammate developed most of the styling. Chose to use REACT, a component based front end,  to allow for more programmatic logic than using plain HTML and CSS. 
+                      </p>
+                  </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-3">
+                  <div class="card__cta">
+                    <a href="http://kanto.surge.sh" class="btn btn--white">View Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class='col-1-of-4'>
+                <div class="card">
+                  <div class="card__side card__side--front">
+                    <div class="card__picture card__picture--4">
+                      &nbsp;
+                    </div>
+                    <h4 class="card__heading">
+                      <span class="card__heading-span card__heading-span--4">
+                        HANGMAN
+                      </span>
+                    </h4>
+                    <div class="card__details">
+                        <p>
+                          Project objective was to build and la simple game. Created a hangman game using HTML, CSS, and JS. Added a win and lose state animation. Used  JS dom manipulation to simulate a flip book animation by hiding and revealing text boxes that contained ASCII art. 
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card__side card__side--back card__side--back-4">
+                    <div class="card__cta">
+                      <a href="https://pages.git.generalassemb.ly/chriswehe/project1/" class="btn btn--white">View Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+  
+          <div class="u-center-text u-margin-top-huge">
+            <a href="https://github.com/chriswehe" target="_blank" class="btn btn--blue">My GitHub</a>
+          </div>
+        </section>
+      </main>
+  
+      <footer class="footer">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="mailto:chriswehe@gmail.com" class="footer__link">Email</a></li>
+            <li class="footer__item"><a href="https://www.linkedin.com/in/christopher-wehe/" class="footer__link">LinkedIn</a></li>
+            <li class="footer__item"><a href="https://docs.google.com/document/d/1HE3ejE339iX-1W3Z8IBEWN8FYe0Andfum4wQckKErJI/edit?usp=sharing" class="footer__link">Resume</a></li>
+            <li class="footer__item"><a href="https://github.com/chriswehe" class="footer__link">GitHub</a></li>
+          </ul>
+        </div>
+      </footer>
   </body>
 </html>
